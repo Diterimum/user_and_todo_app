@@ -8,7 +8,7 @@ from models.orm import Base
 
 DATABASE_URL = os.getenv(
     "DATABASE_URL",
-    "postgresql+psycopg://postgres:yourpassword@127.0.0.1:5432/postgres",
+    "postgresql+psycopg://postgres:postgres@127.0.0.1:5432/todo_db",
 )
 
 engine = create_engine(DATABASE_URL, echo=False, future=True)
